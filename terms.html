@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Conditions d’utilisation du bot Discord LMU Stats.">
+  <title>Conditions d’utilisation — LMU Stats</title>
+  <style>
+:root {
+  --bg: #05080d;
+  --panel: #0b111b;
+  --panel-2: #111b29;
+  --cyan: #24d8ff;
+  --blue: #2878ff;
+  --text: #edf7ff;
+  --muted: #9fb3c8;
+  --line: rgba(36,216,255,.22);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(40,120,255,.18), transparent 34rem),
+    radial-gradient(circle at 100% 20%, rgba(36,216,255,.12), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(5,8,13,.86);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  width: min(1040px, calc(100% - 32px));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  gap: 20px;
+}
+.brand {
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+.brand span { color: var(--cyan); }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: .95rem;
+}
+nav a:hover { color: var(--cyan); }
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 54px auto 90px;
+}
+.hero {
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(17,27,41,.94), rgba(8,14,23,.94));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.34);
+}
+.eyebrow {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .78rem;
+  font-weight: 800;
+}
+h1 {
+  margin: 6px 0 12px;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+h2 {
+  margin-top: 42px;
+  color: var(--cyan);
+  font-size: 1.4rem;
+}
+h3 { margin-top: 26px; }
+p, li { color: #d8e5f0; }
+.meta {
+  color: var(--muted);
+  margin: 0;
+}
+.card {
+  margin-top: 20px;
+  padding: 22px 24px;
+  background: rgba(11,17,27,.86);
+  border: 1px solid rgba(159,179,200,.14);
+  border-radius: 14px;
+}
+a { color: var(--cyan); }
+strong { color: white; }
+code {
+  color: #bceeff;
+  background: #08111c;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+.notice {
+  border-left: 3px solid var(--cyan);
+  padding: 14px 18px;
+  background: rgba(36,216,255,.06);
+  color: var(--muted);
+  margin: 22px 0;
+}
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  padding: 28px 16px;
+  text-align: center;
+  font-size: .9rem;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.button {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #031018;
+  background: linear-gradient(90deg, var(--cyan), #75e9ff);
+}
+.button.secondary {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+ul { padding-left: 22px; }
+@media (max-width: 700px) {
+  .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+  nav a { margin: 0 15px 0 0; display: inline-block; }
+  .hero { padding: 24px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">LMU <span>Stats</span></a>
+    <nav>
+      <a href="terms.html">Conditions</a>
+      <a href="privacy.html">Confidentialité</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Documents juridiques</div>
+    <h1>Conditions d’utilisation</h1>
+    <p class="meta">Date d’entrée en vigueur : 21 juin 2026</p>
+  </section>
+
+  <div class="notice">
+    En utilisant le bot Discord LMU Stats, vous acceptez les présentes conditions.
+  </div>
+
+  <h2>1. Objet du service</h2>
+  <p>LMU Stats est un outil communautaire permettant d’importer, d’analyser et de présenter des données de télémétrie issues de Le Mans Ultimate. Le service peut notamment afficher les temps au tour, les secteurs, la vitesse, le freinage et l’accélération.</p>
+
+  <h2>2. Nature non officielle</h2>
+  <p>LMU Stats est un projet indépendant. Il n’est ni affilié, ni approuvé, ni sponsorisé par Studio 397, Motorsport Games, l’Automobile Club de l’Ouest, Le Mans Ultimate ou Discord.</p>
+
+  <h2>3. Conditions d’accès</h2>
+  <p>L’utilisateur doit disposer d’un compte Discord conforme aux conditions de Discord et être autorisé à utiliser le serveur sur lequel le bot est installé. L’accès à certaines commandes peut être limité par les permissions du serveur.</p>
+
+  <h2>4. Utilisation autorisée</h2>
+  <p>Vous vous engagez à utiliser LMU Stats de manière licite et raisonnable. Il est interdit de tenter de perturber le bot, de contourner ses restrictions, d’introduire des fichiers malveillants ou d’utiliser le service pour harceler d’autres utilisateurs.</p>
+
+  <h2>5. Données de télémétrie</h2>
+  <p>Vous devez uniquement importer des fichiers que vous êtes autorisé à utiliser. Vous restez responsable du contenu transmis au bot ainsi que de la diffusion des statistiques générées.</p>
+
+  <h2>6. Disponibilité</h2>
+  <p>LMU Stats est fourni « en l’état ». Son fonctionnement peut être interrompu, modifié ou arrêté sans préavis, notamment pour maintenance, évolution technique ou incompatibilité avec une mise à jour de Le Mans Ultimate ou Discord.</p>
+
+  <h2>7. Exactitude des résultats</h2>
+  <p>Les résultats sont calculés à partir des données disponibles dans les fichiers de télémétrie. Des écarts peuvent apparaître en raison de données incomplètes, d’une fréquence d’échantillonnage limitée ou de modifications du format source.</p>
+
+  <h2>8. Limitation de responsabilité</h2>
+  <p>Dans les limites autorisées par la loi, l’éditeur de LMU Stats ne pourra être tenu responsable d’une perte de données, d’une interruption du service, d’un résultat incorrect ou de tout dommage indirect lié à l’utilisation du bot.</p>
+
+  <h2>9. Propriété intellectuelle</h2>
+  <p>Le code, le logo et les éléments graphiques propres à LMU Stats restent la propriété de leur auteur, sauf mention contraire. Les marques et contenus appartenant à des tiers restent la propriété de leurs détenteurs respectifs.</p>
+
+  <h2>10. Suspension de l’accès</h2>
+  <p>L’accès au bot peut être suspendu en cas d’abus, de comportement malveillant, de non-respect des présentes conditions ou de risque pour la sécurité du service.</p>
+
+  <h2>11. Modification des conditions</h2>
+  <p>Ces conditions peuvent être mises à jour afin de refléter les évolutions du bot ou les obligations applicables. La date d’entrée en vigueur affichée en haut de cette page sera alors modifiée.</p>
+
+  <h2>12. Contact</h2>
+  <p>Pour toute question concernant LMU Stats, contactez l’administrateur du serveur Discord sur lequel le bot est installé.</p>
+</main>
+<footer>© 2026 LMU Stats — Projet communautaire non officiel.</footer>
+</body>
+</html>

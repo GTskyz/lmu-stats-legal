@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Politique de confidentialité du bot Discord LMU Stats.">
+  <title>Politique de confidentialité — LMU Stats</title>
+  <style>
+:root {
+  --bg: #05080d;
+  --panel: #0b111b;
+  --panel-2: #111b29;
+  --cyan: #24d8ff;
+  --blue: #2878ff;
+  --text: #edf7ff;
+  --muted: #9fb3c8;
+  --line: rgba(36,216,255,.22);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(40,120,255,.18), transparent 34rem),
+    radial-gradient(circle at 100% 20%, rgba(36,216,255,.12), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(5,8,13,.86);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  width: min(1040px, calc(100% - 32px));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  gap: 20px;
+}
+.brand {
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+.brand span { color: var(--cyan); }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: .95rem;
+}
+nav a:hover { color: var(--cyan); }
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 54px auto 90px;
+}
+.hero {
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(17,27,41,.94), rgba(8,14,23,.94));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.34);
+}
+.eyebrow {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .78rem;
+  font-weight: 800;
+}
+h1 {
+  margin: 6px 0 12px;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+h2 {
+  margin-top: 42px;
+  color: var(--cyan);
+  font-size: 1.4rem;
+}
+h3 { margin-top: 26px; }
+p, li { color: #d8e5f0; }
+.meta {
+  color: var(--muted);
+  margin: 0;
+}
+.card {
+  margin-top: 20px;
+  padding: 22px 24px;
+  background: rgba(11,17,27,.86);
+  border: 1px solid rgba(159,179,200,.14);
+  border-radius: 14px;
+}
+a { color: var(--cyan); }
+strong { color: white; }
+code {
+  color: #bceeff;
+  background: #08111c;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+.notice {
+  border-left: 3px solid var(--cyan);
+  padding: 14px 18px;
+  background: rgba(36,216,255,.06);
+  color: var(--muted);
+  margin: 22px 0;
+}
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  padding: 28px 16px;
+  text-align: center;
+  font-size: .9rem;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.button {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #031018;
+  background: linear-gradient(90deg, var(--cyan), #75e9ff);
+}
+.button.secondary {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+ul { padding-left: 22px; }
+@media (max-width: 700px) {
+  .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+  nav a { margin: 0 15px 0 0; display: inline-block; }
+  .hero { padding: 24px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">LMU <span>Stats</span></a>
+    <nav>
+      <a href="terms.html">Conditions</a>
+      <a href="privacy.html">Confidentialité</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Documents juridiques</div>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Date d’entrée en vigueur : 21 juin 2026</p>
+  </section>
+
+  <div class="notice">
+    Cette politique décrit les données traitées par LMU Stats et la manière dont elles sont utilisées.
+  </div>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>LMU Stats est exploité localement par l’administrateur du serveur Discord qui installe le bot. Pour toute demande, contactez cet administrateur directement sur Discord.</p>
+
+  <h2>2. Données susceptibles d’être traitées</h2>
+  <p>Selon les fonctions utilisées, LMU Stats peut traiter :</p>
+  <ul>
+    <li>l’identifiant Discord de l’utilisateur ayant lancé une commande ;</li>
+    <li>l’identifiant du serveur et du salon Discord ;</li>
+    <li>les paramètres des commandes utilisées ;</li>
+    <li>les fichiers de télémétrie <code>.duckdb</code> volontairement importés ;</li>
+    <li>les informations de session et de pilotage contenues dans ces fichiers, notamment le nom du pilote, le circuit, la voiture, les temps au tour, les secteurs, la vitesse, le freinage et l’accélération ;</li>
+    <li>les images et statistiques générées par le bot.</li>
+  </ul>
+
+  <h2>3. Finalités</h2>
+  <p>Ces données sont utilisées uniquement pour exécuter les commandes, analyser les sessions de jeu, conserver l’historique demandé par l’utilisateur, générer les visuels et assurer le fonctionnement technique du bot.</p>
+
+  <h2>4. Base du traitement</h2>
+  <p>Le traitement repose sur la demande de l’utilisateur lorsqu’il utilise une commande ou importe volontairement un fichier de télémétrie. L’administrateur du serveur peut également s’appuyer sur son intérêt légitime à assurer la sécurité et le bon fonctionnement du bot.</p>
+
+  <h2>5. Stockage</h2>
+  <p>Dans la configuration locale prévue pour LMU Stats, les fichiers et statistiques sont stockés sur l’ordinateur qui héberge le bot, notamment dans sa base SQLite et ses dossiers d’archives. Ils ne sont pas transférés vers un service public par LMU Stats, sauf lorsqu’un résultat est volontairement publié dans Discord.</p>
+
+  <h2>6. Durée de conservation</h2>
+  <p>Les sessions et tours sont conservés jusqu’à leur suppression manuelle par l’administrateur. Les messages et pièces jointes publiés sur Discord restent soumis aux paramètres de conservation de Discord et du serveur concerné.</p>
+
+  <h2>7. Partage des données</h2>
+  <p>LMU Stats ne vend pas les données personnelles. Les données peuvent être visibles par les membres autorisés du salon Discord dans lequel les résultats sont publiés. Discord traite également les données nécessaires au fonctionnement de sa plateforme conformément à sa propre politique de confidentialité.</p>
+
+  <h2>8. Sécurité</h2>
+  <p>L’administrateur doit protéger le token du bot, limiter l’accès aux fichiers locaux et maintenir les dépendances à jour. Aucun système ne pouvant garantir une sécurité absolue, il est recommandé de ne pas importer de fichier contenant des informations inutiles ou sensibles.</p>
+
+  <h2>9. Vos droits</h2>
+  <p>Selon la législation applicable, vous pouvez demander l’accès, la rectification ou la suppression des données vous concernant. Pour exercer ces droits, contactez l’administrateur du serveur Discord qui exploite LMU Stats.</p>
+
+  <h2>10. Mineurs</h2>
+  <p>LMU Stats n’est pas conçu pour collecter volontairement des données personnelles sensibles concernant des mineurs. L’utilisation du bot doit respecter les règles d’âge de Discord et la législation applicable.</p>
+
+  <h2>11. Évolution de la politique</h2>
+  <p>Cette politique peut être mise à jour lorsque les fonctionnalités ou les méthodes de stockage évoluent. La date affichée en haut de la page indique la version applicable.</p>
+
+  <h2>12. Contact</h2>
+  <p>Pour toute question ou demande relative aux données, contactez l’administrateur du serveur Discord sur lequel LMU Stats est installé.</p>
+</main>
+<footer>© 2026 LMU Stats — Projet communautaire non officiel.</footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Documents juridiques du bot Discord LMU Stats.">
+  <title>LMU Stats — Documents juridiques</title>
+  <style>
+:root {
+  --bg: #05080d;
+  --panel: #0b111b;
+  --panel-2: #111b29;
+  --cyan: #24d8ff;
+  --blue: #2878ff;
+  --text: #edf7ff;
+  --muted: #9fb3c8;
+  --line: rgba(36,216,255,.22);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(40,120,255,.18), transparent 34rem),
+    radial-gradient(circle at 100% 20%, rgba(36,216,255,.12), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(5,8,13,.86);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav {
+  width: min(1040px, calc(100% - 32px));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  gap: 20px;
+}
+.brand {
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+}
+.brand span { color: var(--cyan); }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: .95rem;
+}
+nav a:hover { color: var(--cyan); }
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 54px auto 90px;
+}
+.hero {
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(17,27,41,.94), rgba(8,14,23,.94));
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.34);
+}
+.eyebrow {
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .78rem;
+  font-weight: 800;
+}
+h1 {
+  margin: 6px 0 12px;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+}
+h2 {
+  margin-top: 42px;
+  color: var(--cyan);
+  font-size: 1.4rem;
+}
+h3 { margin-top: 26px; }
+p, li { color: #d8e5f0; }
+.meta {
+  color: var(--muted);
+  margin: 0;
+}
+.card {
+  margin-top: 20px;
+  padding: 22px 24px;
+  background: rgba(11,17,27,.86);
+  border: 1px solid rgba(159,179,200,.14);
+  border-radius: 14px;
+}
+a { color: var(--cyan); }
+strong { color: white; }
+code {
+  color: #bceeff;
+  background: #08111c;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+.notice {
+  border-left: 3px solid var(--cyan);
+  padding: 14px 18px;
+  background: rgba(36,216,255,.06);
+  color: var(--muted);
+  margin: 22px 0;
+}
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  padding: 28px 16px;
+  text-align: center;
+  font-size: .9rem;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.button {
+  display: inline-block;
+  padding: 11px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  color: #031018;
+  background: linear-gradient(90deg, var(--cyan), #75e9ff);
+}
+.button.secondary {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+}
+ul { padding-left: 22px; }
+@media (max-width: 700px) {
+  .nav { align-items: flex-start; padding: 14px 0; flex-direction: column; }
+  nav a { margin: 0 15px 0 0; display: inline-block; }
+  .hero { padding: 24px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">LMU <span>Stats</span></a>
+    <nav>
+      <a href="terms.html">Conditions</a>
+      <a href="privacy.html">Confidentialité</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="eyebrow">Bot Discord de télémétrie</div>
+    <h1>LMU Stats</h1>
+    <p class="meta">Documents juridiques officiels du projet.</p>
+    <div class="buttons">
+      <a class="button" href="terms.html">Conditions d’utilisation</a>
+      <a class="button secondary" href="privacy.html">Politique de confidentialité</a>
+    </div>
+  </section>
+  <div class="card">
+    <h2 style="margin-top:0">À propos</h2>
+    <p>LMU Stats analyse les fichiers de télémétrie de Le Mans Ultimate afin de présenter les tours, secteurs, vitesses, freinages et accélérations dans Discord.</p>
+  </div>
+</main>
+<footer>© 2026 LMU Stats — Projet communautaire non officiel.</footer>
+</body>
+</html>
